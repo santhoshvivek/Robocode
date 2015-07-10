@@ -1,0 +1,20 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN" "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping package="com.utd.robocode.dto">
+
+  <class name="Users" table="users">
+    <id name="user_id" column="user_id">
+      <generator class="identity" />
+    </id>
+    <property name="user_name" column="user_name" />
+   <!--  <many-to-one name="album" column="AlbumId" /> -->
+    <property name="user_pwd" column="user_pwd" />
+    <property name="user_domain_id" column="user_domain_id" />
+    <property name="user_role_id" column="user_role_id" />
+    <property name="user_ranking" column="user_ranking" />
+    <property name="created_date" column="created_date" />
+    <property name="updated_date" column="updated_date" />
+  </class>
+
+</hibernate-mapping>

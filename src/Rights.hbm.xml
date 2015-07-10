@@ -1,0 +1,13 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN" "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping package="com.utd.robocode.dto">
+
+  <class name="Rights" table="rights">
+    <id name="right_id" column="right_id">
+      <generator class="identity" />
+    </id>
+    <property name="right_name" column="right_name" />
+  </class>
+
+</hibernate-mapping>

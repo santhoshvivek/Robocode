@@ -1,0 +1,19 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN" "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping package="com.utd.robocode.dto">
+
+  <class name="MossResult" table="moss_result">
+    <id name="mr_id" column="mr_id">
+      <generator class="identity" />
+    </id>
+    <property name="compare_robot_id_1" column="compare_robot_id_1" />
+    <property name="compare_domain_id_1" column="compare_domain_id_1" />
+    <property name="compare_robot_id_2" column="compare_robot_id_2" />
+    <property name="compare_domain_id_2" column="compare_domain_id_2" />
+    <property name="percentage" column="percentage" />
+    <property name="compare_robot_name_1" column="compare_robot_name_1" />
+    <property name="compare_robot_name_2" column="compare_robot_name_2" />
+  </class>
+
+</hibernate-mapping>

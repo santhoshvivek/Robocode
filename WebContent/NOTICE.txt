@@ -1,0 +1,13 @@
+Robocode Online
+Copyright 2014 
+
+Robocode Online is a project by students of The University of Texas at Dallas
+as part of the project for Cloud Computing Course CS 6301.501.
+Robocode Online is a port of Robocode (Desktop Application) to a Web Application and
+has been deployed to Windows Azure Cloud Platform. 
+
+Robocode is an open source educational game started by Mathew Nelson.
+Contributions are being made by people including Flemming N. Larsen and Pavel Šavara
+who work on Robocode to keep it current and fix the bugs.
+Website - http://robocode.sourceforge.net/ [Source: - Wikipedia]
+

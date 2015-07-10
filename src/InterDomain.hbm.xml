@@ -1,0 +1,18 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN" "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping package="com.utd.robocode.dto">
+
+  <class name="InterDomain" table="inter_domain_mapping">
+    <id name="idm_id" column="idm_id">
+      <generator class="identity" />
+    </id>
+    <property name="idm_domain_id" column="idm_domain_id" />
+    <property name="idm_role_id" column="idm_role_id" />
+    <property name="idm_other_domain_id" column="idm_other_domain_id" />
+    <property name="idm_other_domain_role_id" column="idm_other_domain_role_id" />
+    <property name="created_date" column="created_date" />
+    <property name="updated_date" column="updated_date" />
+  </class>
+
+</hibernate-mapping>

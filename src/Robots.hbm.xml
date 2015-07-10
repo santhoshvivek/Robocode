@@ -1,0 +1,20 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN" "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping package="com.utd.robocode.dto">
+
+  <class name="Robots" table="robots">
+    <id name="robot_id" column="robot_id">
+      <generator class="identity" />
+    </id>
+    <property name="robot_name" column="robot_name" />
+    <property name="robot_desc" column="robot_desc" />
+    <property name="robot_code" column="robot_code" />
+    <property name="robot_ranking" column="robot_ranking" />
+    <property name="created_by" column="created_by" />
+    <property name="created_date" column="created_date" />
+    <property name="updated_date" column="updated_date" />
+    <property name="robot_points" column="robot_points" />
+  </class>
+
+</hibernate-mapping>

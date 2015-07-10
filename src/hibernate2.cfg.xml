@@ -1,0 +1,45 @@
+<?xml version='1.0' encoding='utf-8'?>
+<!DOCTYPE hibernate-configuration PUBLIC
+        "-//Hibernate/Hibernate Configuration DTD 3.0//EN"
+        "http://hibernate.sourceforge.net/hibernate-configuration-3.0.dtd">
+
+<hibernate-configuration>
+
+    <session-factory>
+
+        <!-- Database connection settings -->
+        <property name="connection.driver_class">com.microsoft.sqlserver.jdbc.SQLServerDriver</property>
+      
+      	<property name="connection.url">jdbc:sqlserver://wn1ueyu9w2.database.windows.net:1433;database=meaazsqld2;encrypt=true;hostNameInCertificate=*.database.windows.net;loginTimeout=30;</property>        
+        <property name="connection.username">meaazsqld2usr@wn1ueyu9w2</property>
+        <property name="connection.password">Mpass808</property>
+
+        <!-- JDBC connection pool (use the built-in) -->
+        <property name="connection.pool_size">1</property>
+
+        <!-- SQL dialect -->
+        <property name="dialect">org.hibernate.dialect.SQLServerDialect</property>
+
+        <!-- Enable Hibernate's automatic session context management -->
+        <property name="current_session_context_class">thread</property>
+
+        <!-- Disable the second-level cache  -->
+        <property name="cache.provider_class">org.hibernate.cache.NoCacheProvider</property>
+
+        <!-- Echo all executed SQL to stdout -->
+        <property name="show_sql">true</property>
+
+        <!-- Drop and re-create the database schema on startup -->
+        <property name="hbm2ddl.auto">update</property>
+
+       <mapping resource="AccessRights.hbm.xml" /> 
+       <mapping resource="Rights.hbm.xml" />
+       <mapping resource="Robots.hbm.xml" />
+       <mapping resource="Roles.hbm.xml" />
+       <mapping resource="Users.hbm.xml" />
+       <mapping resource="MossResult.hbm.xml" />
+		<mapping resource="Updates.hbm.xml" />
+		<mapping resource="InterDomain.hbm.xml" />
+    </session-factory>
+
+</hibernate-configuration>

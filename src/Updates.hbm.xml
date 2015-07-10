@@ -1,0 +1,17 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN" "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping package="com.utd.robocode.dto">
+
+  <class name="Updates" table="robot_updates">
+    <id name="ru_id" column="ru_id">
+      <generator class="identity" />
+    </id>
+    <property name="ru_robot_id" column="ru_robot_id" />
+   <!--  <many-to-one name="album" column="AlbumId" /> -->
+    <property name="ru_user_id" column="ru_user_id" />
+    <property name="ru_domain_id" column="ru_domain_id" />
+    <property name="created_date" column="created_date" />
+    <property name="updated_date" column="updated_date" />
+  </class>
+</hibernate-mapping>

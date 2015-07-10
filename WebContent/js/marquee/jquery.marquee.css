@@ -1,0 +1,8 @@
+.marquee {
+  width: 100%;
+  overflow: hidden;
+  border: 1px solid #ccc;
+  background: #E7E4D3;
+  color: #2C6700;
+}
+
